@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "532aa72d-a74c-4c36-949b-d31dc9433f24",
+		"name": "PruebasUPC EXAMEN",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9486607"
+	},
+	"item": [
+		{
+			"name": "GetCurso",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44395/v2/Cursoes?codLineaNegocio=U&codCurso=AD07",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44395",
+					"path": [
+						"v2",
+						"Cursoes"
+					],
+					"query": [
+						{
+							"key": "codLineaNegocio",
+							"value": "U"
+						},
+						{
+							"key": "codCurso",
+							"value": "AD07"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetMatricula",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44395/v2/Matriculas?idMatricula=2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44395",
+					"path": [
+						"v2",
+						"Matriculas"
+					],
+					"query": [
+						{
+							"key": "idMatricula",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetDetMatricula",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44395/v2/DetMatriculas?idMatricula=2&lineaCurso=U&codCurso=AM01",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44395",
+					"path": [
+						"v2",
+						"DetMatriculas"
+					],
+					"query": [
+						{
+							"key": "idMatricula",
+							"value": "2"
+						},
+						{
+							"key": "lineaCurso",
+							"value": "U"
+						},
+						{
+							"key": "codCurso",
+							"value": "AM01"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
